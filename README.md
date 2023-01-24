@@ -113,4 +113,4 @@ Overall, this web server provides a high degree of flexibility and configurabili
        <td align="center"><a href="https://github.com/C0M-M4ND0"><img src="https://avatars.githubusercontent.com/u/94039533?v=3?s=100" width="100px;" alt="avatar"/><br /><sub><b>oabdelha</b></sub></a><br /><a href="#" title="stuff"></a>
     </tr>
   </tbody>
-</table>
+</table> 
