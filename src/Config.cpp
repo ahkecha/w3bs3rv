@@ -20,10 +20,10 @@ parse::parse()
 void parse::register_server_elements()
 {
 	Selements["error"]  =  Serror;
-    Selements["listen"]   = listen_;
-    Selements["server_name"] = server_name;
+    	Selements["listen"]   = listen_;
+    	Selements["server_name"] = server_name;
 	Selements["index"] = index_;
-    Selements["root"]   = root;
+   	Selements["root"]   = root;
 	Selements["autoindex"]   = autoindex;
 	Selements["error_page"]   = error_page;
 	Selements["allowed_methods"]   = allowed_methods;
@@ -35,15 +35,15 @@ void parse::register_server_elements()
 void parse::register_location_elements()
 {
 	Lelements["error"]  =  Lerror;
-    Lelements["deny"] = deny;
-    Lelements["allow"]   = allow;
+    	Lelements["deny"] = deny;
+    	Lelements["allow"]   = allow;
 	Lelements["cgiExt"] = cgiExt;
-    Lelements["cgiPath"]   = cgiPath;
-	Lelements["root"] = locationRoot;
-    Lelements["autoindex"]   = locationAutoIndex;
-    Lelements["index"]   = locationIndex;
-    Lelements["redirect"]   = locationRedirect;
-    Lelements["allowed_methods"]   = locationAllowedMethods;
+    	Lelements["cgiPath"]   = cgiPath;
+    	Lelements["root"] = locationRoot;
+    	Lelements["autoindex"]   = locationAutoIndex;
+    	Lelements["index"]   = locationIndex;
+    	Lelements["redirect"]   = locationRedirect;
+    	Lelements["allowed_methods"]   = locationAllowedMethods;
 }
 
 
