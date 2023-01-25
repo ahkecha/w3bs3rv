@@ -19,7 +19,7 @@
 class CGI
 {
 	private:
-		std::vector<std::string> 	vec;
+		std::vector<std::string> 		vec;
 		std::string 				stringbuff;
 		std::string 				host;
 		std::string 				port;
@@ -33,23 +33,23 @@ class CGI
 		std::string 				pathinfo;
 		std::string 				cgiextension;
 		std::string 				httpcookies;
-		std::string					full_path;
-		char 						*rawbody;
+		std::string				full_path;
+		char 					*rawbody;
 
 	public:
-		bool 						contentLen;
-		bool 						error;
+		bool 					contentLen;
+		bool 					error;
 		CGI(s_server &, s_location &, std::string &,\
 			std::string &, std::string &, std::string &,\
 			std::string &, char *, std::string &, std::string &,\
 			std::map<std::string, std::string> &, std::string &);
-		std::vector<std::string>	getCGIHeaders();
+		std::vector<std::string>		getCGIHeaders();
 		std::string 				getContent();
 		std::string 				getHeaders() const;
 		std::string 				&getBody();
-		void 						constructEnv();
-		void 						executeCGI();
-		int 						getStatusCode();
+		void 					constructEnv();
+		void 					executeCGI();
+		int 					getStatusCode();
 		~CGI();
 };
 
