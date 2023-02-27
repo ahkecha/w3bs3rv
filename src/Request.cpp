@@ -6,7 +6,7 @@
 /*   By: ahkecha <ahkecha@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/04 16:53:03 by ahkecha           #+#    #+#             */
-/*   Updated: 2022/12/05 16:23:17 by ahkecha          ###   ########.fr       */
+/*   Updated: 2023/02/27 14:01:18 by ahkecha          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -289,7 +289,7 @@ Request::Request(std::vector<char> &vec, std::vector<s_server> tmpConfig, std::s
 		if (path == "/upload.cgi")
 			isFile = true;
 		bodyvec.clear();
-		for (std::string::iterator it = vec.begin() + pos + 4 ; it != vec.end();)
+		for (std::vector<char>::iterator it = vec.begin() + pos + 4 ; it != vec.end();)
 		{
 			std::string sizestr;
 			while (*it != '\r' and *it + 1 != '\n')
