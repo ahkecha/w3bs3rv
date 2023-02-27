@@ -25,7 +25,7 @@ To build this project you need `autoconf` installed on your computer.
 $ git clone https://github.com/ahkecha/w3bs3rv
 
 # Go into the repository
-$ cd webserv
+$ cd w3bs3rv
 
 # Run configure script
 $ ./configure
